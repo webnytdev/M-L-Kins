@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" >
+    <meta name="description" content="M&L KINS company sells electrical gadgets and also do installation an construction of all electrical gadgets, CCTv installation, Ac installation etc" >
+    <meta name="keywords" content="Electrical gadgets, AC installation, CCTv installation, Razor Fence"  >
+    <meta name="author" content="M&L KINS" >
+    <meta name="publisher" content="Kingsford Opoku Darkwah(Webnyt)" >
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <nav>
+    <img src="images/logo.jpg" class="logo" alt="">
+    <div class="navbar">
+        <div class="nav-btn">
+            <i id="show" class="fas fa-bars"></i>
+            <i id="hide" class="fas fa-times"></i>
+        </div>
+        <ul id="ul">
+            <li  class="active"><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </div>
+    </nav>
+</header>
+
+
+<main>
+    <section class="home-top">
+<div class="text">
+<h3>Home For Electricals And Electronics</h3>
+<p>Get all your electronics and electricals from Us, To save future troubles </p>
+<button>See Our Services</button>
+</div>
+<div class="image">
+<img src="images/logo.jpg" alt="">
+</div>
+    </section>
+
+    <section class="home-products">
+        <h2>Our products</h2>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                   <div>
+                    <h3>Generator</h3>
+                    <img src="images/generator.jpg" alt="">
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                 <div>
+                    <h3>Television</h3>
+                    <img src="images/tv.jpg" alt="">
+                 </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <h3>Headphone</h3>
+                    <img src="images/headphone.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                      <h3>Fridge</h3>
+                      <img src="images/fridge.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div>
+                      <h3>Rice Cooker</h3>
+                      <img src="images/ricecooker.jpg" alt="">
+                    </div>
+                  </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <button>See More</button>
+    </section>
+
+    <section class="home-service">
+        <h2>Our Services</h2>
+        <div class="container">
+            <div class="service">
+              <i>  <ion-icon name="hardware-chip-outline"></ion-icon></i>
+                <h3>Ac Installation</h3>
+                <span>M&L KINS do not just sell electricals and electronics, we also do AC Installation so if you have an Ac and you want to do the 
+                    installation you can contact us. </span>
+            </div>
+            <div class="service">
+                <i><ion-icon name="construct-outline"></ion-icon></i>
+                <h3>Electrical Construction</h3>
+                <span>
+                   We also do electrical construction.
+                </span>
+            </div>
+
+            <div class="service">
+                <i><ion-icon name="settings-outline"></ion-icon></i>
+                <h3>Electrical Maintenance</h3>
+                <span>
+                    We do electrical maintenance as wels, any fault conccerning electrical gadgets. 
+                </span>
+            </div>
+        </div>
+        <button><a href="">See more</a></button>
+    </section>
+</main>
+
+
+<footer>
+<div>
+    <div class="links">
+        <h3>Short Links</h3>
+        <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="aboutus.html">About</a></li>
+        </ul>
+    </div>
+    <div class="links">
+        <h3>Contact Links</h3>
+        <ul>
+            <li>+233 202324560</li>
+            <li><a href="">info@mlkinsltd.com</a></li>
+        </ul>
+    </div>
+    <div class="address">
+        <h3>Address</h3>
+        <span>Comm 16 junction Lashibi</span>
+    </div>
+</div>
+<p>&copy; 2024 Your M&L KINS. All rights reserved.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    let swiper = new Swiper(".mySwiper", {
+      slidesPerView: "3",
+      loop : true,
+      spaceBetween: 20,
+     
+      breakpoints: {
+                // When window width is <= 982px
+                350: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                838: {
+                    slidesPerView: 2
+                },
+                982: {
+                    slidesPerView: 3
+                },
+            },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="js/navbar.js"></script>
+</body>
+</html>
